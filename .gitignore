@@ -1,0 +1,13 @@
+node_modules/
+.expo/
+dist/
+dist-preview-fix/
+android/
+ios/
+.env*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
+supabase/.temp/

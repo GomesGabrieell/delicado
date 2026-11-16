@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "jspdf": "npm:jspdf@4.2.1",
+    "@supabase/supabase-js": "npm:@supabase/supabase-js@2.119.0"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Delicado Pro",
+    "slug": "delicado-pro",
+    "scheme": "delicado-pro",
+    "version": "0.1.0",
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ],
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F6F5F1",
+    "ios": {
+      "bundleIdentifier": "com.delicadopro.app"
+    },
+    "android": {
+      "package": "com.delicadopro.app"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-dev-client",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O Delicado Pro usa sua biblioteca para selecionar fotos do catálogo.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      "expo-font",
+      "expo-sharing"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <title>Proposta comercial</title>
+  <link rel="stylesheet" href="proposal.css">
+  <script type="module" src="proposal.js"></script>
+</head>
+<body>
+  <main>
+    <p id="notice" role="status">Carregando proposta…</p>
+    <article id="proposal" hidden>
+      <header>
+        <p id="company"></p>
+        <h1 id="title"></h1>
+        <p id="code"></p>
+      </header>
+      <div class="body">
+        <p class="label">Preparado para</p>
+        <h2 id="customer"></h2>
+        <p id="event"></p>
+        <h2>Decoração</h2>
+        <p id="decoration" class="multiline"></p>
+        <section id="references" hidden><h2>Referências</h2><div id="images"></div></section>
+        <section class="price">
+          <p class="label">Valor total</p><strong id="total"></strong>
+          <p id="payment" class="multiline"></p>
+          <p id="expiry"></p>
+        </section>
+        <section aria-labelledby="responseTitle">
+          <h2 id="responseTitle">Sua resposta</h2>
+          <p id="response" role="status"></p>
+          <div id="actions">
+            <button data-choice="approved">Aprovar</button>
+            <button data-choice="negotiate" class="secondary">Negociar</button>
+            <button id="decline" class="secondary">Não aprovar</button>
+          </div>
+          <div id="revision" hidden>
+            <p>Você deseja receber uma nova proposta?</p>
+            <button data-choice="declined" data-revision="yes">Sim, quero receber</button>
+            <button data-choice="declined" data-revision="no" class="secondary">Não, obrigado</button>
+            <button id="cancel" class="secondary">Voltar</button>
+          </div>
+          <a id="whatsapp" class="button" hidden rel="noreferrer noopener" target="_blank">Conversar no WhatsApp</a>
+        </section>
+        <button id="pdf" class="secondary">Baixar PDF</button>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
